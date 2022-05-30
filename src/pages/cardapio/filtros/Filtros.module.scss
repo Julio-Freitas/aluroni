@@ -1,0 +1,81 @@
+@import "styles/variaveis";
+@import "styles/colors";
+
+
+
+.filtros {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  &__filtro_ball {
+    background-color: $blue;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    transition: all .5s;
+  }
+
+  &__filtro {
+    align-items: center;
+    background-color: $grey;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+
+    &--ativo {
+      &__massas {
+        background-color: $massas;
+        color: white;
+      }
+      &__carnes {
+        background-color: $carnes;
+        color: white;
+      }
+      &__combos {
+        background-color: $combos;
+      }
+      &__veganos {
+        background-color: $veganos;
+      }
+      color: white;
+      div {
+        left: calc(100% - 26px);
+        background-color: #fff;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 9px 0 $black;
+    }
+
+    &:hover div{
+      left: calc(100% - 16px);
+      animation: rotation 2s infinite linear;
+    }
+   
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+}
+
