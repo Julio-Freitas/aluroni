@@ -6,6 +6,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    background-color: #22222231;
+    border-radius: 4px;
+    h2,
+    p {
+      color: #000;
+    }
+  }
 
   &__imagem {
     min-width: 240px;
@@ -38,7 +49,7 @@
     }
     p {
       color: $dark-grey;
-      font-size: 1.3rem;
+      font-size: 2rem;
       font-weight: 600;
       max-width: 600px;
       margin-bottom: 20px;
@@ -50,6 +61,8 @@
     justify-content: space-between;
     margin-bottom: 20px;
     max-width: 700px;
+    font-size: 1.3rem;
+
     @media (max-width: $desktop_xsm) {
       justify-content: flex-end;
     }
@@ -68,6 +81,8 @@
     height: 40px;
     justify-content: center;
     padding: 10px 30px;
+    font-size: 1.3rem;
+
     &__massas {
       background-color: $massas;
       color: white;
@@ -88,7 +103,7 @@
   &__valor {
     align-items: center;
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: bold;
     justify-content: center;
   }
