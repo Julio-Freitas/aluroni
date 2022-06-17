@@ -12,3 +12,6 @@
 
    ### Run Tests
     - npm test || yarn test
+
+ ## view Page 
+  - acess [Aluroni](https://aluroni-blue.vercel.app/)

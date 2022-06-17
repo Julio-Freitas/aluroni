@@ -10,7 +10,7 @@ describe('testing component Cardapio', () => {
       </BrowserRouter>
     );
     const title = screen.getAllByRole('heading')[0];
-    expect(title.textContent).toEqual('Cardápio');
+    expect(title.textContent).toEqual('Cardápiorsrs');
     expect(container).toMatchSnapshot();
   });
 });
