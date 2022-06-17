@@ -9,3 +9,6 @@
     - npm install
     - npm start
     - Access [local](http://localhost:3000/)
+
+   ### Run Tests
+    - npm test || yarn test
