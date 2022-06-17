@@ -12,6 +12,10 @@
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: 50px $padding-horizontal-md;
   }
+
+  @media (max-width: $mobile) {
+    padding: 10px 0;
+  }
 }
 .titulo {
   color: $dark;

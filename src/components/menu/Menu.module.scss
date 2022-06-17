@@ -18,6 +18,19 @@
     padding: 20px $padding-horizontal-md;
   }
 
+  @media (max-width: $mobile) {
+    padding: 20px $padding-horizontal-mobile;
+    flex-direction: column;
+
+    &__list {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+
+
   &__list {
     align-items: center;
     display: flex;
@@ -47,5 +60,10 @@
         color: #fff !important;
       }
     }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 10px $padding-horizontal-mobile;
+
   }
 }

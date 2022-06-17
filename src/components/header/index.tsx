@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.header__text}>A casa do código e da massa</div>
+        <h3 className={styles.header__text}>A casa do código e da massa</h3>
       </header>
     </>
   );

@@ -15,4 +15,7 @@
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
   padding: 10px $padding-horizontal-md;
   }
+  @media (max-width: $mobile) {
+    padding: 0px $padding-horizontal-mobile;
+  }
 }
